@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: HowMuchRestedXP
+## Notes: How Much Rested XP
+## Author: zhorabzhora
+## Version: 0.1
+
+HowMuchRestedXP.lua
