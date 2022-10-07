@@ -6,7 +6,7 @@ local function HowMuchRestedXP(count)
         local playerName = UnitName("player")
 		local XPExhaustion = GetXPExhaustion()
 		local XPMax = UnitXPMax("player")
-		DEFAULT_CHAT_FRAME:AddMessage("You have " .. XPExhaustion .. " rested XP " .. "(" ..  XPExhaustion * 100 / XPMax .. '%' .. ")")
+		DEFAULT_CHAT_FRAME:AddMessage("You have " .. XPExhaustion .. " rested XP " .. "(" ..  math.ceil(XPExhaustion * 100 / XPMax) .. '%' .. ")")
 end
 
 
