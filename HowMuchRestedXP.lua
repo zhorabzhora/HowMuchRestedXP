@@ -10,7 +10,7 @@ local function HowMuchRestedXP(count)
 		if count == "" then
 			DEFAULT_CHAT_FRAME:AddMessage("You have " .. XPExhaustion .. " rested XP " .. "(" ..  math.ceil(XPExhaustion * 100 / XPMax) .. '%' .. ")")
 		else
-			DEFAULT_CHAT_FRAME:AddMessage("You will get 150% rested xp in about " .. ((XPMax * 1.5) - XPExhaustion) / (76 * count) .. " seconds")
+			DEFAULT_CHAT_FRAME:AddMessage("You will get 150% rested xp in about " .. math.ceil(((XPMax * 1.5) - XPExhaustion) / (76 * count)) .. " seconds")
 		end
 end
 
